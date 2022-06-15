@@ -25,7 +25,7 @@ void inorder (ABin a, LInt * l) {
     }
 }
 
-//nao funciona na codeboard pelos testes que fiz aqui funciona com a mesma arvore que na codeboard da erro
+
 void posorder (ABin a, LInt * l) {
     LInt p;
     if(a)
@@ -40,7 +40,7 @@ void posorder (ABin a, LInt * l) {
 }
 
 
-//nao funciona na codeboard pelos testes que fiz aqui funciona com a mesma arvore que na codeboard da erro
+
 
 void preorder (ABin a, LInt * l) {
     LInt p;
@@ -193,7 +193,7 @@ int nivelV (ABin a, int n, int v[]) {
       }
       if(n==1)
       {
-          v[li]=a->valor;/*tem o valor li so para se entender melhor acho eu mas podia tar la 0 no indice*/
+          v[li]=a->valor;
           ++li;
       }
   }
@@ -214,7 +214,7 @@ int dumpAbin (ABin a, int v[], int N) {
     }
     return li;
 }
-/*funciona aqui mas na codeboard nao...*/
+
 int somasAcA2 (ABin a){
     int res = 0;
 	if(a!=NULL) {
@@ -318,7 +318,7 @@ int maiorAB (ABin a) {
 void removeMaiorA (ABin *a)
 {
     ABin l;
-    /* so se por acaso alguem utilza-se com uma arvore vazia;*/
+    /* arvore vazia;*/
     if(a)
     {
     while((*a)->dir)
