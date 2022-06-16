@@ -1,14 +1,3 @@
-/**
- * @file comerciais.c
- * @author Carlos Ferreira (a16475@alunos.ipca.pt)
- * @brief Criacao de conteudo para comerciais
- * com.h contem a estrutura que será utilizada neste documento
- * @version 0.1
- * @date 2021-04-29
- * 
- * @copyright Copyright (c) 2021
- * 
- */
 #include "com.h"
 
 /**------------------GLOBAIS--------------------------------------**/
