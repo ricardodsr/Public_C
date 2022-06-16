@@ -1,0 +1,16 @@
+TODO
+
+BUGS
+
+ID de todos as estruturas nao  incrementam a partir da segunda inclusao de informacao.
+Seja se adicionarmos 10 elementos no ficheiro o ID vai de 0 a 9 apos o fechamento do mesmo e proxima inclusao a ID retorna a 0.
+________________________________________________________________________________________________________________________________________
+DOXYGEN
+
+Abrir doxygenwi no windowns e seguir os passos
+________________________________________________________________________________________________________________________________________
+COMPILATION TOOLS
+
+gcc -w -o main .\menuPrincipal.c .\trabalhadores.c .\comerciais.c .\clientes.c .\rjG.c
+
+
