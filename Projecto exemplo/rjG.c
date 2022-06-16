@@ -1,15 +1,3 @@
-/**
- * @file rjG.c
- * @author Carlos Ferreira (a16475@alunos.ipca.pt)
- * @brief Ficheiro de camada superior que engloba todo o conteudo (trabalhadores clientes e comerciais)
- * manipulando e gerindo conteudos das tres fontes
- * @version 0.1
- * @date 2021-04-29
- * 
- * @copyright Copyright (c) 2021
- * 
- */
-//#include "rjG.h"
 #include "cli.h"
 #include "com.h"
 #include "trab.h"
