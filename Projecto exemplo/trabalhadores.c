@@ -1,14 +1,3 @@
-/**
- * @file trabalhadores.c
- * @author Carlos Ferreira (a16475@alunos.ipca.pt)
- * @brief Criacao de conteudo para trabalhadores
- * trab.h contem a estrutura que será utilizada neste documento
- * @version 0.1
- * @date 2021-04-29
- * 
- * @copyright Copyright (c) 2021
- * 
- */
 #include "trab.h"
 /**------------------GLOBAIS--------------------------------------**/
 static int qtd = 0;     // qtd é uma variavel do tipo estatica que conta a quantidade de trabalhadores incritos
