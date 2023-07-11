@@ -10,20 +10,21 @@
  * @param filename The name of the file to read.
  * @return 0 on success, -1 on error.
  */
+#define BUFFER_SIZE 4096
+
 int read_file(const char* filename) {
     FILE* input_file = fopen(filename, "r");
     if (!input_file)
         return -1;
 
-    char *contents = NULL;
-    size_t len = 0;
-    while (getline(&contents, &len, input_file) != -1){
-        printf("%s", contents);
+    char buffer[BUFFER_SIZE];
+    size_t bytes_read;
+
+    while ((bytes_read = fread(buffer, sizeof(char), BUFFER_SIZE, input_file)) > 0){
+        fwrite(buffer, sizeof(char), bytes_read, stdout);
     }
 
     fclose(input_file);
-    free(contents);
-
     return 0;
 }
 
@@ -35,5 +36,5 @@ int main(void) {
         exit(EXIT_FAILURE);
     }
 
-    exit(EXIT_SUCCESS);
+    return 0;
 }
